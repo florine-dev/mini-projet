@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import backgroundImg from "../assets/images/font1.png";
 import background2 from "../assets/images/background2.png";
 import background1 from "../assets/images/background1.png";
+import chat from "../assets/images/chat.png";
 
 function FaqSection() {
   const questions = [
@@ -80,21 +81,21 @@ function FaqSection() {
       </section>
 
       {/* Cards Section */}
-      <section className="relative px-6 md:px-12 mt-24 mb-16 ">
-        <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 via-blue-500/10 to-purple-600/20 blur-3xl opacity-40 " />
+      <section className="relative px-6 md:px-12 mt-22 mb-16  ">
+        <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 via-blue-500/10 to-purple-600/20 blur-3xl opacity-40  " />
         <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto mb ">
           {/* Card 1 */}
           <div className="bg-[#010b24] p-6 rounded-2xl  border border-white/10 shadow-xl backdrop-blur-md hover:scale-[1.01] transition w-140 -m-0">
             <div className="mb-6">
-              <div className="ml-auto  right-0 top-0 bottom- absolute  w-35 h-31 rounded-lg flex items-center justify-center text-2xl">
+              <div className="ml-auto  right-0 top-0 bottom- absolute  w-35 h-31 rounded-lg flex items-center justify-center text-2xl ">
                 <img
                   src={background1}
                   alt="Description"
-                  className="w-40 h-auto rounded-lg shadow-lg"
+                  className="w-40 h-auto rounded-lg shadow-lg rounded-tr-2xl"
                 />
               </div>
             </div>
-            <h3 className="text-2xl font-semibold mb-2 mt-40">
+            <h3 className="text-3xl font-semibold mb-2 mt-40">
               Explore all features
             </h3>
             <p className=" text-white text-[20] mb-6">
@@ -109,15 +110,15 @@ function FaqSection() {
           {/* Card 2 */}
           <div className="bg-[#010b24] p-6 rounded-2xl   relative border posit border-white/10 shadow-xl backdrop-blur-md hover:scale-[1.01] transition w-140 m-0 ">
             <div className="mb-6">
-              <div className="ml-auto  right-0 top-0 absolute   rounded-lg flex items-center justify-center text-2xl">
+              <div className="ml-auto  right-0 top-0 absolute   rounded-lg flex items-center justify-center text-2xl ">
                 <img
                   src={background2}
                   alt="Description"
-                  className="w-40 h-auto rounded-lg shadow-lg"
+                  className="w-40 h-auto rounded-lg shadow-lg rounded-tr-2xl"
                 />
               </div>
             </div>
-            <h3 className="text-2xl font-semibold mb-2 mt-40">Choose a plan</h3>
+            <h3 className="text-3xl font-semibold mb-2 mt-40">Choose a plan</h3>
             <p className=" text-white/ mb-6 text-[20]">
               Get a plan that suits your style of trading and level up <br />{" "}
               your analysis.
@@ -128,6 +129,13 @@ function FaqSection() {
           </div>
         </div>
       </section>
+      <div className="absolute bottom-0 right-2 md:bottom-8 md:right-8 w-6 h-6 md:w-10 md:h-10">
+        <img
+          src={chat}
+          alt="Chat Icon"
+          className="w-full h-full object-contain rounded-full shadow-lg w-6 h-6"
+        />
+      </div>
     </div>
   );
 }

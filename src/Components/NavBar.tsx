@@ -34,7 +34,7 @@ function NavBar() {
               onClick={() =>
                 setOpenMenu((prev) => (prev === "features" ? null : "features"))
               }
-              className="flex items-center gap-1 hover:text-white"
+              className="flex items-center gap-1 hover:text-white cursor-pointer"
             >
               Features <ChevronDown size={10} />
             </button>
@@ -42,14 +42,14 @@ function NavBar() {
               <div className="absolute bg-[#0b0f1e] mt-1 py-2 rounded shadow text-[10px] w-32 z-50">
                 <Link
                   to="/feature1"
-                  className="block px-4 py-1 hover:bg-[#1a2238] hover:text-white"
+                  className="block px-4 py-1 hover:bg-[#1a2238] hover:text-white cursor-pointer"
                   onClick={() => setOpenMenu(null)}
                 >
                   AI Signals
                 </Link>
                 <Link
                   to="/feature2"
-                  className="block px-4 py-1 hover:bg-[#1a2238] hover:text-white"
+                  className="block px-4 py-1 hover:bg-[#1a2238] hover:text-white cursor-pointer"
                   onClick={() => setOpenMenu(null)}
                 >
                   Backtesting
@@ -66,7 +66,7 @@ function NavBar() {
                   prev === "resources" ? null : "resources"
                 )
               }
-              className="flex items-center gap-1 hover:text-white"
+              className="flex items-center gap-1 hover:text-white cursor-pointer"
             >
               Resources <ChevronDown size={10} />
             </button>
@@ -74,14 +74,14 @@ function NavBar() {
               <div className="absolute bg-[#0b0f1e] mt-1 py-2 rounded shadow text-[10px] w-32 z-50">
                 <Link
                   to="/faqSection"
-                  className="block px-4 py-1 hover:bg-[#1a2238] hover:text-white"
+                  className="block px-4 py-1 hover:bg-[#1a2238] hover:text-white cursor-pointer"
                   onClick={() => setOpenMenu(null)}
                 >
                   FAQs
                 </Link>
                 <Link
                   to="/guides"
-                  className="block px-4 py-1 hover:bg-[#1a2238] hover:text-white"
+                  className="block px-4 py-1 hover:bg-[#1a2238] hover:text-white cursor-pointer"
                   onClick={() => setOpenMenu(null)}
                 >
                   Guides
@@ -91,20 +91,20 @@ function NavBar() {
           </div>
 
           {/* Autres liens */}
-          <Link to="/faqSection" className="hover:text-white">
+          <Link to="/faqSection" className="hover:text-white cursor-pointer">
             Library
           </Link>
 
-          <Link to="/tarification" className="hover:text-white">
+          <Link to="/tarification" className="hover:text-white cursor-pointer">
             Pricing
           </Link>
 
           {/* Boutons */}
           <div>
-            <button className="text-white/90 px-3 py-1 border border-white/30 rounded-full hover:bg-white hover:text-black transition text-[12px] bg-gray-700">
+            <button className="cursor-pointer text-white/90 px-3 py-1 border border-white/30 rounded-full hover:bg-white hover:text-black transition text-[12px] bg-gray-700">
               Log In
             </button>
-            <button className="ml-2 px-3 py-1 bg-white text-black rounded-full hover:opacity-90 transition text-[12px]">
+            <button className="cursor-pointer ml-2 px-3 py-1 bg-white text-black rounded-full hover:opacity-90 transition text-[12px]">
               Sign Up
             </button>
           </div>
